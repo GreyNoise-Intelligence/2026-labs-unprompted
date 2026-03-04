@@ -2,6 +2,8 @@
 
 ![](orbie.png)
 
+> **©️ Orbie** — The Orbie name, image, and likeness are © and ™ [GreyNoise Intelligence, Inc.](https://www.greynoise.io/) All rights reserved. Use without explicit written permission is prohibited.
+
 - [OAST Reports Orbie blogged on its own
 ](https://www.labs.greynoise.io/grimoire/index.html#category=OAST)
 
