@@ -4,11 +4,12 @@
 
 > **©️ Orbie** — The Orbie name, image, and likeness are © and ™ [GreyNoise Intelligence, Inc.](https://www.greynoise.io/) All rights reserved. Use without explicit written permission is prohibited.
 
-- [OAST Reports Orbie blogged on its own
-](https://www.labs.greynoise.io/grimoire/index.html#category=OAST)
-
+![](orbie-ingredients.png)
 
 ## Reports
+
+- [OAST Reports Orbie blogged on its own
+](https://www.labs.greynoise.io/grimoire/index.html#category=OAST)
 
 ### [Campaign Analysis: Next.js Server Actions Exploitation & gs-netcat C2 Deployment](campaign-analysis-nextjs-server-actions-exploitation-and-gs-netcat-c2-deployment-from-457718857.pdf)
 
