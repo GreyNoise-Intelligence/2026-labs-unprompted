@@ -39,6 +39,12 @@ An AI skill (structured prompt + reference docs + helper scripts) for automated 
 
 ## Tools
 
+### [suricata-mcp](https://github.com/GreyNoise-Intelligence/suricata-mcp)
+
+A Go-based MCP server that gives LLM clients autonomous access to [Suricata](https://suricata.io/) for network traffic analysis. Point it at a PCAP file and it can run Suricata, parse the resulting EVE JSON output, triage alerts, extract IOCs (IPs, domains, TLS certificates, file hashes), detect honeypot attack patterns (C2 beaconing, exploitation, lateral movement, exfiltration, scanning), correlate events by flow ID to reconstruct attack timelines, and generate protocol/traffic statistics — all through 14 MCP tools and 4 workflow prompts. Includes memory-efficient streaming for large EVE JSON files and custom microsecond-precision timestamp handling for accurate timeline reconstruction.
+
+Ships with workflow prompts for common analysis patterns: general PCAP analysis, IOC extraction for threat intelligence, honeypot capture analysis, and proactive threat hunting. Works with Claude Desktop, Cursor, and any MCP-capable client. Cross-platform (Linux, macOS, Windows) with automatic Suricata detection. MIT licensed.
+
 ### [roast](https://codeberg.org/hrbrmstr/go-roast)
 
 A Go library, CLI tool, and stdio MCP server for decoding and analyzing Interactsh OAST (Out-of-band Application Security Testing) domains. OAST callbacks are a staple of modern vulnerability scanning — every Interactsh domain encodes a 12-byte XID preamble containing a timestamp, machine ID, process ID, and counter that can be used to correlate scanning campaigns, attribute activity to specific tooling, and track threat actor infrastructure over time. `roast` extracts and decodes that metadata from raw domains, log files, or PCAPs, and can perform full campaign analysis (grouping by machine ID, identifying time spans, and surfacing counter progressions). It ships with live-fetching of 868+ known OAST domain suffixes (Interactsh + Burp Collaborator) from [darses/cti](https://github.com/darses/cti), intelligent caching, and an attribution engine that distinguishes legitimate security vendors (NetSPI, Rapid7) from unknown infrastructure. Inspired by John Jarocki's LabsCon talk ["Tracking the cyberspace ghost from OAST to OAST"](https://drive.proton.me/urls/ACAEQN0HB4#wfhmFCMfc4Os).
